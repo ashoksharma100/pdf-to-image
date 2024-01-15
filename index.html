@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="pdf.min.js"></script>
+  <script type="text/javascript" src="jszip.min.js"></script>
+  <style>
+    #loadingBar {
+      width: 100%;
+      height: 20px;
+      background-color: #ddd;
+      border-radius: 5px;
+      margin-top: 10px;
+      overflow: hidden;
+    }
+
+    #progress {
+      height: 100%;
+      width: 0;
+      background-color: #4caf50;
+    }
+  </style>
+  <title>Ebook Creator</title>
+</head>
+<body>
+    <input type="file" id="pdfInput" accept=".pdf">
+  <button onclick="processPDF()">Process PDF</button>
+  <div id="loadingBar">
+    <div id="progress"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
